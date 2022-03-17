@@ -8,7 +8,7 @@
     <h1 style=" text-decoration: none;">
       <a href="/detail/{{ $post->id }}">{{ $post->judul }}</a>
     </h1>
-    <img src="{{ asset('storage/'.$post->image) }}" style="width:300px;"alt="">
+
     <h5>{{ $post->Author }}</h5>
     <p style=" text-align: justify;">{{ $post->excerpt }}</p>
 

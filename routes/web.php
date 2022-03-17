@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\AdminCategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Models\post;
 
@@ -28,4 +29,6 @@ Route::get('/tambah',[PostController::class,'create'] );
 Route::get('/edit/{id}',[PostController::class,'edit'] );
 Route::get('/delete/{id}',[PostController::class,'delete'] );
 Route::get('/detail/{id}', [PostController::class,'show']);
+
+Route::resource('/category',AdminCategoryController::class)->except('show');
 
