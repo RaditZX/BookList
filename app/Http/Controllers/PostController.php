@@ -49,6 +49,7 @@ class PostController extends Controller
       $post->body=$request->body;
       $post->author=$request->author;
       $post->penerbit=$request->penerbit;
+      $post->image=$request->image;
       if($request->file('image')){
           $post['image'] = $request->file('image')->store('post-image');
 

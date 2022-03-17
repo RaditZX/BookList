@@ -25,6 +25,11 @@
   <label for="image" class="form-label">Post Image</label>
   <input class="form-control" type="file" id="image" name="image">
 </div>
+
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Post image with link</label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  name="image" aria-describedby="emailHelp">
+  </div>
   <div class="form-floating">
   <label for="floatingTextarea2">isi</label>
   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="body" style="height: 100px"></textarea>
