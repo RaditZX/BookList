@@ -29,8 +29,12 @@
   <div class="mb-3">
   <label for="image" class="form-label">Post Image</label>
   <input class="form-control" type="file" id="image" name="image" >
-</div>
-  <div class="mb-3">
+</div> 
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Post image with link</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" value="{{ $post->image  }} "  name="image" aria-describedby="emailHelp">
+  </div>
+ <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">isi</label>
     <input type="text" class="form-control" id="exampleInputEmail1"  name="body" aria-describedby="emailHelp" value="{{ $post->body  }} ">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
